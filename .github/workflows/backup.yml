@@ -1,0 +1,16 @@
+name: Export Firestore Data
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+        with:
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default+credentials: test_pull_request
+      - run: gcloud config set project $PROJECT_ID
+      - run: gcloud firestore export $BUCKET

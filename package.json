@@ -1,0 +1,32 @@
+{
+  "name": "github-action-test",
+  "version": "1.0.0",
+  "description": "GitHub Actions Test Repo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirnejak/github-action-test.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Test"
+  ],
+  "author": "Jitendra Nirnejak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirnejak/github-action-test/issues"
+  },
+  "homepage": "https://github.com/nirnejak/github-action-test#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
