@@ -1,7 +1,7 @@
 {
-  "name": "github-action-test",
+  "name": "github-action-workflows",
   "version": "1.0.0",
-  "description": "GitHub Actions Test Repo",
+  "description": "GitHub Actions Test Workflows",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
